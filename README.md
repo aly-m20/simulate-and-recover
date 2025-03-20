@@ -8,8 +8,9 @@ A common consistency test in cognitive modeling, through trial-and-error and per
 Organization-wise, the src folder contains the main Python script, simulate_recover.py, which simulates and recovers parameters using the model. Additionally, the main.sh script runs the complete 3000-iteration simulate-and-recovery exercise. The test folder includes the unit tests in test_simulation.py, which verify stability, as well as parameter sampling and accuracy of recovery, across different sample sizes. The test.sh script runs my test suite. The results folder stores the simulation results in a .csv and also contains two ChatGPT-generated line graphs of the my run simulation’s results. Requirements.txt lists dependencies for running the code.
 
 The results of the exercise, and ChatGPT’s conversion of the csv file into graphs. demonstrate a variety of things:
-*Trends in bias: the mean bias for Boundary (α), Drift (ν), and Non-Decision Time (τ) evidently fluctuates at smaller sample sizes. And an increase in sample size correlates with decreasing bias values, reinforcing how larger samples reduce errors in estimation.
-*Squared Error Trends: squared error abides by a decreasing trend with the larger sample sizes, so parameter estimates significantly improve the more trials there are. This exemplifies the concept of noise in observed statistics decreasing as N increases.
+
+1) Trends in bias: the mean bias for Boundary (α), Drift (ν), and Non-Decision Time (τ) evidently fluctuates at smaller sample sizes. And an increase in sample size correlates with decreasing bias values, reinforcing how larger samples reduce errors in estimation.
+2) Squared Error Trends: squared error abides by a decreasing trend with the larger sample sizes, so parameter estimates significantly improve the more trials there are. This exemplifies the concept of noise in observed statistics decreasing as N increases.
 
 Ultimately, the results of my project support the EZ Diffusion model’s validity when recovering parameters. A small sample size, like that of N = 10, tends to have higher bias and squared error (unreliable estimates). A larger size, like that of N = 4000, tends to have biases closer to zero and minimal squared errors (true parameters are accurately recovered).
 
