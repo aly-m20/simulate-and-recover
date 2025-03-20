@@ -12,7 +12,7 @@ The results of the exercise, and ChatGPT’s conversion of the csv file into gra
 1) Trends in bias: the mean bias for Boundary (α), Drift (ν), and Non-Decision Time (τ) evidently fluctuates at smaller sample sizes. And an increase in sample size correlates with decreasing bias values, reinforcing how larger samples reduce errors in estimation.
 2) Squared Error Trends: squared error abides by a decreasing trend with the larger sample sizes, so parameter estimates significantly improve the more trials there are. This exemplifies the concept of noise in observed statistics decreasing as N increases.
 
-Ultimately, the results of my project support the EZ Diffusion model’s validity when recovering parameters. A small sample size, like that of N = 10, tends to have higher bias and squared error (unreliable estimates). A larger size, like that of N = 4000, tends to have biases closer to zero and minimal squared errors (true parameters are accurately recovered).
+Ultimately, the results of my project support the EZ Diffusion model’s validity when recovering parameters. In other words, the EZ diffusion model can be used to estimate parameters from data that were generated. A small sample size, like that of N = 10, tends to have higher bias and squared error (unreliable estimates). A larger size, like that of N = 4000, tends to have biases closer to zero and minimal squared errors (true parameters are accurately recovered).
 
 This aligns with Week 9’s lecture slides and shows the EZ diffusion model stands as a reliable model for large data sets, while simultaneously having limitations at smaller sample sizes. The trends of the results additionally align with the predictions theorized in the slides.
 
