@@ -25,7 +25,6 @@ class EZDiffusionTestSuite(unittest.TestCase):
         self.assertAlmostEqual(bias[2], 0, places=2)
 
 def test_stability_across_samples(self):
-    """Ensure parameter estimates improve with larger sample sizes."""
     sample_sizes = [10, 40, 4000]
     
     for size in sample_sizes:
